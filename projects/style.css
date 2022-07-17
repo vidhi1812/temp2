@@ -1,0 +1,177 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width:100%;
+    height: 70px;
+    background-color: grey;
+    padding: 0 20px;
+}
+
+.header h2{
+    line-height:70px ;
+    float: left;
+    text-transform: capitalize;
+    color:chartreuse;
+}
+.header .menu
+{ 
+    list-style: none;
+    float:right;
+
+}
+.menu li{
+    display: inline-block;
+    line-height: 70px;
+    
+}
+.menu li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+ text-transform: uppercase;
+ padding: 0 20px;
+ transition: .4s;
+
+}
+menu li a:hover,.show-btn:hover ,.hide-btn:hover{
+    color: skyblue;
+
+}
+.show-btn ,.hide-btn{
+    font-size: 30px;
+    color:white;
+    line-height: 70px;
+    display: none;
+    transition: .4s;
+}
+.show-btn{
+    float: right;
+}
+#chk{
+    position:absolute;
+    visibility: hidden;
+    z-index:-10;
+}
+@media(max-width:800px){
+    .show-btn ,.hide-btn{
+        display: block;
+    }
+
+    .menu
+    {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 100%;
+        height: 100vh;
+        background-color:black ;
+        text-align: centre;
+        padding:80px 0;
+        transition:.7s;
+        line-height: normal;
+
+    }
+
+
+#chk:checked~ .menu{
+    right: 0;
+}
+.menu li{
+    display:block;
+    align-items: centre;
+    justify-content: centre;
+    margin-left: 50px;
+    padding: 25px;
+
+}
+.menu li a
+{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.hide-btn{
+    position:absolute;
+    right: 20px;
+    top:10px;
+
+
+}
+
+
+}
+
+
+
+.box{
+    display:block;
+    align-items: center;
+    justify-content: centre;
+    background-color:crimson;
+    width:70px;
+    height:80px;
+   color: white;
+ 
+}
+
+.box logo{ 
+    color:whitesmoke;
+    margin-top: 50px;
+    text-shadow: 2px blue;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+
+}
+
+.banner
+{
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    color: black;
+    display: flex;
+    justify-content: centre;
+    align-items: centre;
+    line-height: normal;
+}
+
+
+.count{
+    display: flex;
+            align-content: centre;
+            justify-content: space-evenly;
+             width: 100%;
+             height:450px;
+            align-items: centre;
+             margin-top:20px;
+}
+
+.box1{
+    width:25%;
+    height:100%;
+     display: flex;
+     background-color: orange;
+    justify-content: center;
+   text-align: center;
+     border-bottom-left-radius: 20px;
+     border-top-right-radius: 20px;
+    margin: 20px;
+    font-size:20px;
+  align-items: center;        
+  }
+
+
+  .footer{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    align-items: centre;
+  }
+
